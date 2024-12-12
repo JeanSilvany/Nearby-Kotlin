@@ -2,10 +2,10 @@ package com.kotlin.nearby.data.model
 
 import androidx.annotation.DrawableRes
 
-data class NearbyCategory(
+data class Category(
     val id: String,
     val name: String,
 ) {
     @get: DrawableRes
-    val icon: Int? get() = NearbyCategoryFilterChipView.fromDescription(description = name)?.icon
+    val icon: Int? get() = CategoryFilterChipView.fromDescription(description = name)?.icon
 }
