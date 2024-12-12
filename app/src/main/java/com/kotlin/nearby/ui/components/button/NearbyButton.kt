@@ -1,4 +1,4 @@
-package com.kotlin.nearby.ui.components
+package com.kotlin.nearby.ui.components.button
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.layout.Arrangement
@@ -17,6 +17,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.kotlin.nearby.R
 import com.kotlin.nearby.ui.theme.GreenBase
 import com.kotlin.nearby.ui.theme.Typography
 
@@ -57,7 +58,7 @@ private fun NearbyButtonPreview() {
     NearbyButton(
         modifier = Modifier.fillMaxWidth(),
         text = "Confirmar",
-        iconRes = com.kotlin.nearby.R.drawable.ic_scan
+        iconRes = R.drawable.ic_scan
     ) {}
 }
 
@@ -75,6 +76,6 @@ private fun NearbyButtonNoIconPreview() {
 private fun NearbyButtonNoTextPreview() {
     NearbyButton(
         modifier = Modifier,
-        iconRes = com.kotlin.nearby.R.drawable.ic_arrow_left
+        iconRes = R.drawable.ic_arrow_left
     ) {}
 }
